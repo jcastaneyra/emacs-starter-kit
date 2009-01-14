@@ -30,8 +30,8 @@
 ;; Mark paragraph
 (global-set-key (kbd "M-p") 'mark-paragraph)
 
-;; fullscreen: M-return
-(global-set-key [M-return] 'mac-toggle-max-window)
+;; fullscreen: C-M-return
+(global-set-key [C-M-return] 'mac-toggle-max-window)
 
 ;; whitespace
 (define-key global-map (kbd "C-c C-w") 'whitespace-mode)
