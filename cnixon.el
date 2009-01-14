@@ -12,3 +12,5 @@
 
 ;; turn on cua-mode
 (cua-mode t)
+
+(textmate-mode)
