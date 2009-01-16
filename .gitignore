@@ -11,3 +11,7 @@ oddmuse/*
 .newsrc-dribble
 .nnmail-cache
 /#.newsrc-dribble#
+*.html
+*.pdf
+#*
+*~
