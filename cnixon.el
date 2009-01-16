@@ -1,5 +1,6 @@
 (require 'color-theme)
-(color-theme-zenburn)
+(require 'color-theme-tango)
+(color-theme-tango)
 
 (defun mac-toggle-max-window ()
   (interactive)
@@ -13,4 +14,5 @@
 ;; turn on cua-mode
 (cua-mode t)
 
+(require 'textmate)
 (textmate-mode)
