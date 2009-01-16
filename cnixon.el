@@ -1,6 +1,5 @@
 (require 'color-theme)
-(require 'color-theme-tango)
-(color-theme-tango)
+(color-theme-zenburn)
 
 (defun mac-toggle-max-window ()
   (interactive)
