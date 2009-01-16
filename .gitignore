@@ -14,3 +14,7 @@ oddmuse/*
 /#.newsrc-dribble#
 .svn
 .DS_Store
+*.pdf
+#*
+*~
+
