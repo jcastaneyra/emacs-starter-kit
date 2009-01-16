@@ -36,3 +36,4 @@
 ;; whitespace
 (define-key global-map (kbd "C-c C-w") 'whitespace-mode)
 (define-key global-map (kbd "C-c w") 'whitespace-cleanup)
+
