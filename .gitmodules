@@ -1,0 +1,3 @@
+[submodule "cnixon/rhtml-mode"]
+	path = cnixon/rhtml-mode
+	url = git://github.com/eschulte/rhtml.git
