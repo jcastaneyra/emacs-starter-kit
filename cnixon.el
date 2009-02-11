@@ -3,6 +3,8 @@
 
 (scroll-bar-mode nil)
 
+(column-number-mode t)
+
 (defun mac-toggle-max-window ()
   (interactive)
   (set-frame-parameter nil 'fullscreen (if (frame-parameter nil 'fullscreen)
@@ -25,3 +27,4 @@
 (autoload 'scala-mode "scala-mode-auto" nil t)
 (add-to-list 'auto-mode-alist '("\\.scala" . scala-mode))
 
+(server-start)
