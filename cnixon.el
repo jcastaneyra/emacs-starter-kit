@@ -1,5 +1,7 @@
 (require 'color-theme)
-(color-theme-zenburn)
+;;(color-theme-zenburn)
+
+(scroll-bar-mode nil)
 
 (defun mac-toggle-max-window ()
   (interactive)
