@@ -1,5 +1,7 @@
 (require 'color-theme)
-(color-theme-zenburn)
+;;(color-theme-zenburn)
+
+(scroll-bar-mode nil)
 
 (column-number-mode t)
 
