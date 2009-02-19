@@ -227,6 +227,7 @@ static char *gnus-pointer[] = {
 
      '(zenburn-lowlight-1 ((t (:foreground "#606060"))))
      '(zenburn-lowlight-2 ((t (:foreground "#708070"))))
+     '(zenburn-lowlight-3 ((t (:foreground "#809080"))))
 
      `(zenburn-yellow ((t (:foreground ,zenburn-yellow))))
      `(zenburn-orange ((t (:foreground ,zenburn-orange))))
@@ -372,7 +373,7 @@ static char *gnus-pointer[] = {
 
      '(trailing-whitespace ((t (:inherit font-lock-warning))))
      '(highlight ((t (:inherit font-lock-warning))))
-     '(paren ((t (:inherit zenburn-lowlight-1))))
+     '(paren ((t (:inherit zenburn-lowlight-3))))
      '(show-paren-mismatch ((t (:inherit font-lock-warning))))
      '(show-paren-match ((t (:inherit font-lock-keyword))))
      '(match ((t (:weight bold))))

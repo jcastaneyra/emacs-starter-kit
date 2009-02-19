@@ -26,3 +26,10 @@
 (add-to-list 'auto-mode-alist '("\\.scala" . scala-mode))
 
 (server-start)
+
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/cnixon/yasnippet"))
+(require 'yasnippet)
+(yas/initialize)
+(yas/load-directory "~/.emacs.d/cnixon/snippets")
+
+;;(color-theme-zenburn)

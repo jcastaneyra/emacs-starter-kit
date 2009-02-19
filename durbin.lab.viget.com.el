@@ -1,1 +1,1 @@
-(setq x-super-keysym 'meta)
+(setq browse-url-browser-function 'browse-url-firefox)
