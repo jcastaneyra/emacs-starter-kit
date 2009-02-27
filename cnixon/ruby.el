@@ -13,8 +13,10 @@
   '(progn
      (add-hook 'rhtml-mode-hook
                (lambda () (rinari-launch)))
-     (set-face-background 'erb-face "grey15")
-     (set-face-background 'erb-delim-face "grey10")
+     (set-face-background 'erb-face "grey90")
+     (set-face-background 'erb-delim-face "grey85")
+     (auto-fill-mode 0)
+     (yas/minor-mode 1)
      (define-key rhtml-mode-map (kbd "C-h C-r") 'open-ruby-doc)
      (define-key rhtml-mode-map (kbd "C-h C-l") 'open-rails-doc)))
 

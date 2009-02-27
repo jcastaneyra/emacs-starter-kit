@@ -31,5 +31,6 @@
 (require 'yasnippet)
 (yas/initialize)
 (yas/load-directory "~/.emacs.d/cnixon/snippets")
+(add-to-list 'hippie-expand-try-functions-list 'yas/hippie-try-expand)
 
 ;;(color-theme-zenburn)
