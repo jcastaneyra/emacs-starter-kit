@@ -56,7 +56,7 @@
   (make-local-variable 'column-number-mode)
   (column-number-mode t)
   (setq save-place t)
-  (auto-fill-mode) ;; in comments only
+;;  (auto-fill-mode) ;; in comments only
   (if window-system (hl-line-mode t))
   (pretty-lambdas)
   ;; TODO: this breaks in js2-mode!
