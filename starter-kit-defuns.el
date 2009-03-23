@@ -72,7 +72,7 @@ Symbols matching the text at point are put first in the completion list."
   (if window-system (hl-line-mode t))
   (pretty-lambdas)
   ;; TODO: this breaks in js2-mode!
-  ;;(if (functionp 'idle-highlight) (idle-highlight))
+  (if (functionp 'idle-highlight) (idle-highlight))
   (column-number-mode t))
 
 (defun local-comment-auto-fill ()
@@ -93,7 +93,6 @@ Symbols matching the text at point are put first in the completion list."
 (defun run-coding-hook ()
   "Enable things that are convenient across all coding buffers."
   (run-hooks 'coding-hook))
->>>>>>> c2d1924e512d0986c3f8773c7857b055b9f21252:starter-kit-defuns.el
 
 (defun untabify-buffer ()
   (interactive)
