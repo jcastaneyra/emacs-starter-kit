@@ -14,6 +14,10 @@ oddmuse/*
 /#.newsrc-dribble#
 .svn
 .DS_Store
+<<<<<<< HEAD:.gitignore
 *.pdf
 #*
 *~
+image-dired/
+elim/
+tramp
