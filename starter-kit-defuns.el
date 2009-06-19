@@ -71,6 +71,13 @@ Symbols matching the text at point are put first in the completion list."
 
 (defun local-column-number-mode ()
   (make-local-variable 'column-number-mode)
+  (column-number-mode t)
+  (setq save-place t)
+;;  (auto-fill-mode) ;; in comments only
+  (if window-system (hl-line-mode t))
+  (pretty-lambdas)
+  ;; TODO: this breaks in js2-mode!
+  (if (functionp 'idle-highlight) (idle-highlight))
   (column-number-mode t))
 
 (defun local-comment-auto-fill ()

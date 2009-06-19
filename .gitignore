@@ -15,6 +15,7 @@ oddmuse/*
 .svn
 .DS_Store
 <<<<<<< HEAD:.gitignore
+<<<<<<< HEAD:.gitignore
 *.pdf
 #*
 *~
