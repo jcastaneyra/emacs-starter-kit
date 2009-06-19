@@ -9,6 +9,8 @@
                                    'css-mode
                                    ;; 'nxml
                                    'gist
+                                   'rinari
+                                   'jump
                                    'paredit)
   "Libraries that should be installed by default.")
 
