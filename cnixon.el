@@ -1,5 +1,3 @@
-(require 'color-theme)
-
 (scroll-bar-mode nil)
 (column-number-mode t)
 
@@ -33,4 +31,5 @@
 (yas/load-directory "~/.emacs.d/cnixon/snippets")
 (add-to-list 'hippie-expand-try-functions-list 'yas/hippie-try-expand)
 
-;;(color-theme-zenburn)
+(require 'wombat)
+(color-theme-wombat)
