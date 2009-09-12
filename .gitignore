@@ -14,11 +14,11 @@ oddmuse/*
 /#.newsrc-dribble#
 .svn
 .DS_Store
-<<<<<<< HEAD:.gitignore
-<<<<<<< HEAD:.gitignore
 *.pdf
 #*
 *~
 image-dired/
 elim/
+elpa-to-submit/nxhtml/etc/schema/xhtml-loader.rnc~
 tramp
+\#*

@@ -2,8 +2,6 @@
 ;;
 ;; Part of the Emacs Starter Kit.
 
-;; TODO: switch to kbd invocations everywhere
-
 ;; You know, like Readline.
 (global-set-key (kbd "C-M-h") 'backward-kill-word)
 
@@ -17,7 +15,7 @@
 (global-set-key (kbd "C-c n") 'cleanup-buffer)
 
 ;; Turn on the menu bar for exploring new modes
-(global-set-key [f1] 'menu-bar-mode)
+(global-set-key (kbd "C-<f10>") 'menu-bar-mode)
 
 ;; Font size
 (define-key global-map (kbd "C-+") 'text-scale-increase)
@@ -36,7 +34,6 @@
 (global-set-key (kbd "C-x M-f") 'ido-find-file-other-window)
 (global-set-key (kbd "C-x C-M-f") 'find-file-in-project)
 (global-set-key (kbd "C-x f") 'recentf-ido-find-file)
-(global-set-key (kbd "C-x C-p") 'find-file-at-point)
 (global-set-key (kbd "C-c y") 'bury-buffer)
 (global-set-key (kbd "C-c r") 'revert-buffer)
 (global-set-key (kbd "M-`") 'file-cache-minibuffer-complete)
@@ -95,6 +92,10 @@
   (lambda () (interactive)
     (let ((case-fold-search isearch-case-fold-search))
       (occur (if isearch-regexp isearch-string (regexp-quote isearch-string))))))
+
+;; Org
+(define-key global-map "\C-cl" 'org-store-link)
+(define-key global-map "\C-ca" 'org-agenda)
 
 (provide 'starter-kit-bindings)
 ;;; starter-kit-bindings.el ends here
