@@ -23,6 +23,16 @@
 (autoload 'scala-mode "scala-mode-auto" nil t)
 (add-to-list 'auto-mode-alist '("\\.scala" . scala-mode))
 
+;; haskell
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/cnixon/haskell-mode"))
+(autoload 'haskell-mode "haskell-site-file" nil t)
+(add-to-list 'auto-mode-alist '("\\.hs" . haskell-mode))
+(add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
+(add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
+(require 'inf-haskell)
+;;(add-hook 'haskell-mode-hook 'turn-on-haskell-simple-indent)
+
+
 (setq default-tab-width 2)
 
 (server-start)
