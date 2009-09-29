@@ -1,16 +1,4 @@
-(scroll-bar-mode nil)
-(column-number-mode t)
-
-(defun mac-toggle-max-window ()
-  (interactive)
-  (set-frame-parameter nil 'fullscreen (if (frame-parameter nil 'fullscreen)
-                                           nil
-                                         'fullboth)))
-
 (setq browse-url-browser-function 'browse-url-default-macosx-browser)
-
-;; turn on meta window move
-(windmove-default-keybindings 'meta)
 
 ;; turn on cua-mode
 (cua-mode t)
@@ -29,8 +17,8 @@
 (add-to-list 'auto-mode-alist '("\\.hs" . haskell-mode))
 (add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
 (add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
-(require 'inf-haskell)
-;;(add-hook 'haskell-mode-hook 'turn-on-haskell-simple-indent)
+;; (require 'inf-haskell)
+;; (add-hook 'haskell-mode-hook 'turn-on-haskell-simple-indent)
 
 
 (setq default-tab-width 2)
@@ -45,3 +33,8 @@
 
 (require 'wombat)
 (color-theme-wombat)
+
+(setq visible-bell nil)
+(column-number-mode t)
+(setq ns-command-modifier 'meta)
+(windmove-default-keybindings 'meta)
