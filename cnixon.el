@@ -1,3 +1,6 @@
+;; (set-default-font "Consolas-11")
+(menu-bar-mode 1)
+
 ;; turn on cua-mode
 (cua-mode t)
 
@@ -23,12 +26,8 @@
   (eshell-command 
    (format "find %s -type f | ctags -e -L -" dir-name)))
 
-;; mac-specific
-(setq browse-url-browser-function 'browse-url-default-macosx-browser)
-(set-default-font "Menlo-12")
 (require 'wombat)
 (color-theme-wombat)
-(menu-bar-mode 1)
 
 ;; server
 
