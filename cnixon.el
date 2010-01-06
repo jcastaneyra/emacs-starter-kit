@@ -1,4 +1,4 @@
-;; (set-default-font "Consolas-11")
+(set-default-font "Consolas-11")
 (menu-bar-mode 1)
 
 ;; turn on cua-mode
