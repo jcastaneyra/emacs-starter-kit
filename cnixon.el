@@ -4,9 +4,6 @@
 ;; turn on cua-mode
 (cua-mode t)
 
-(require 'textmate)
-(textmate-mode)
-
 (setq default-tab-width 2)
 
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/cnixon/yasnippet"))
