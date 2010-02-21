@@ -6,7 +6,7 @@
 
 ;; rhtml
 ;; setup rhtml
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/cnixon/rhtml"))
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/jcastaneyra/rhtml"))
 (autoload 'rhtml-mode "rhtml-mode" nil t)
 (eval-after-load 'rhtml-mode
   '(progn

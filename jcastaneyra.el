@@ -8,10 +8,10 @@
 
 (setq default-tab-width 2)
 
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/cnixon/yasnippet"))
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/jcastaneyra/yasnippet"))
 (require 'yasnippet)
 (yas/initialize)
-(yas/load-directory "~/.emacs.d/cnixon/yasnippet/snippets")
+(yas/load-directory "~/.emacs.d/jcastaneyra/yasnippet/snippets")
 (add-to-list 'hippie-expand-try-functions-list 'yas/hippie-try-expand)
 
 (setq visible-bell nil)
