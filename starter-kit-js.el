@@ -27,3 +27,7 @@
 
 (provide 'starter-kit-js)
 ;;; starter-kit-js.el ends here
+
+;; Javascript Mode
+(setq javascript-indent-level 2)
+
